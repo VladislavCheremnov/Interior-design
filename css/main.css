@@ -17,64 +17,84 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
-ul,ol {
+ul {
   list-style: none;
 }
 
-/*Общие стили*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Общие стили */
 
 body {
 	font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-h1 {
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* typografy */
+
+.h1,  .h2{
 	font-family: 'Lora', serif;
+  font-size: 80px;
+  line-height: 102px;
+  color: #574E56;
 }
 
-/* svg-icons*/
+.h2 {
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.text-upper {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  color: #574E56;
+}
+
+/* svg-icons */
+
+.svg-pin,
+.svg-phone,
+.svg-map,
+.svg-inst,
+.svg-email,
+.svg-be {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+.svg-email {
+  fill: #574E56;
+}
 
 .svg-arrow {
 	width: 12px;
   height: 14px;
 	fill: white;
-}
-
-.svg-be {
-  width: 24px;
-  height: 15px;
-	fill: black;
-}
-
-.svg-email {
-  width: 24px;
-  height: 24px;
-  fill: #574E56;
-}
-
-.svg-inst {
-  width: 24px;
-  height: 24px;
-  fill: black;
-}
-
-.svg-map {
-  width: 24px;
-  height: 24px;
-  fill: black;
-}
-
-.svg-phone {
-  width: 18px;
-  height: 24px;
-  fill: black;
-}
-
-.svg-pin {
-  width: 24px;
-  height: 24px;
-  fill: black;
 }
