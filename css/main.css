@@ -98,3 +98,44 @@ body {
   height: 14px;
 	fill: white;
 }
+
+/* header */
+
+.header {
+  height: 800px;
+  background-color: #f9f8f6;
+}
+
+.header-top {
+  height: 70px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.header-nav a + a {
+  margin-left: 40px;
+}
+
+.header-nav a {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.header-nav a:hover {
+  color:#F6D5A7;
+}
+
+.header-nav a:before {
+  content: '';
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #F6D5A7;
+  transition: 0.5s ease-in-out;
+}
+
+.header-nav a:hover:before {
+  width: 100%;
+}
